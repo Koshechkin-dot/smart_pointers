@@ -1,0 +1,7 @@
+/.vs/
+**.sln
+**.vcxproj
+test.**
+**/Debug/
+**.vcxproj.filters
+**.vcxproj.user
