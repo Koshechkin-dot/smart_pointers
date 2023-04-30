@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef _UNIQUE_PTR_H_
+#define _UNIQUE_PTR_H_
+
 //Using namespace for avoiding redefinition of any classes or methods
 namespace smptr
 {
@@ -20,7 +23,7 @@ namespace smptr
 
 		//constructor on typename T object
 		unique_ptr(TYPE*);
-		
+
 		//overload of operators = and *
 		unique_ptr<TYPE>& operator=(unique_ptr<TYPE>&);
 
@@ -97,8 +100,12 @@ namespace smptr
 	template<typename TYPE>
 	inline unique_ptr<TYPE>::~unique_ptr()
 	{
-		delete ptr; 
+		delete ptr;
 	}
 
 }
+
+#endif // !_UNIQUE_PTR_H_
+
+
 
